@@ -30,10 +30,10 @@ const
   {$ELSEIF Defined(MACOS64) and Defined(CPUX64) and not Defined(IOS)}
   LIB_CURL = {$IFDEF DEBUG_LIB_CURL}'libcurl.dylib'{$ELSE}'libcurl.dylib'{$ENDIF};
   _PU = '';
-  {$ELSEIF Defined(LINUX)}
-  LIB_CURL = {$IFDEF DEBUG_LIB_CURL}'libcurld.so'{$ELSE}'libcurl.so'{$ENDIF};
-  _PU = '';
   {$ELSEIF Defined(IOS)}
+  LIB_CURL = {$IFDEF DEBUG_LIB_CURL}'libcurld.dylib'{$ELSE}'libcurl.dylib'{$ENDIF};
+  _PU = '';
+  {$ELSEIF Defined(LINUX)}
   LIB_CURL = {$IFDEF DEBUG_LIB_CURL}'libcurld.so'{$ELSE}'libcurl.so'{$ENDIF};
   _PU = '';
   {$ELSEIF Defined(ANDROID32)}
