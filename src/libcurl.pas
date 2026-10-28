@@ -509,138 +509,6 @@ const
   CURLWS_PONG = (1 shl 6);
   CURLWS_RAW_MODE = (1 shl 0);
   CURLWS_NOAUTOPONG = (1 shl 1);
-  { TODO : Macro probably uses invalid symbol "fmt": }
-  (* CURL_TEMP_PRINTF ( fmt , arg ) __attribute__ ( ( format ( printf , fmt , arg ) ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curl_easy_setopt ( handle , option , value ) __extension__ ( { if ( __builtin_constant_p ( option ) ) { CURL_IGNORE_DEPRECATION ( if ( curlcheck_long_option ( option ) ) if ( ! curlcheck_long ( value ) ) Wcurl_easy_setopt_err_long ( ) ; if ( curlcheck_off_t_option ( option ) ) if ( ! curlcheck_off_t ( value ) ) Wcurl_easy_setopt_err_curl_off_t ( ) ; if ( curlcheck_string_option ( option ) ) if ( ! curlcheck_string ( value ) ) Wcurl_easy_setopt_err_string ( ) ; if ( ( option ) == CURLOPT_PRIVATE ) { } if ( curlcheck_write_cb_option ( option ) ) if ( ! curlcheck_write_cb ( value ) ) Wcurl_easy_setopt_err_write_callback ( ) ; if ( curlcheck_curl_option ( option ) ) if ( ! curlcheck_curl ( value ) ) Wcurl_easy_setopt_err_curl ( ) ; if ( ( option ) == CURLOPT_RESOLVER_START_FUNCTION ) if ( ! curlcheck_resolver_start_callback ( value ) ) Wcurl_easy_setopt_err_resolver_start_callback ( ) ; if ( ( option ) == CURLOPT_READFUNCTION ) if ( ! curlcheck_read_cb ( value ) ) Wcurl_easy_setopt_err_read_cb ( ) ; if ( ( option ) == CURLOPT_IOCTLFUNCTION ) if ( ! curlcheck_ioctl_cb ( value ) ) Wcurl_easy_setopt_err_ioctl_cb ( ) ; if ( ( option ) == CURLOPT_SOCKOPTFUNCTION ) if ( ! curlcheck_sockopt_cb ( value ) ) Wcurl_easy_setopt_err_sockopt_cb ( ) ; if ( ( option ) == CURLOPT_OPENSOCKETFUNCTION ) if ( ! curlcheck_opensocket_cb ( value ) ) Wcurl_easy_setopt_err_opensocket_cb ( ) ; if ( ( option ) == CURLOPT_PROGRESSFUNCTION ) if ( ! curlcheck_progress_cb ( value ) ) Wcurl_easy_setopt_err_progress_cb ( ) ; if ( ( option ) == CURLOPT_XFERINFOFUNCTION ) if ( ! curlcheck_xferinfo_cb ( value ) ) Wcurl_easy_setopt_err_xferinfo_cb ( ) ; if ( ( option ) == CURLOPT_DEBUGFUNCTION ) if ( ! curlcheck_debug_cb ( value ) ) Wcurl_easy_setopt_err_debug_cb ( ) ; if ( ( option ) == CURLOPT_SSL_CTX_FUNCTION ) if ( ! curlcheck_ssl_ctx_cb ( value ) ) Wcurl_easy_setopt_err_ssl_ctx_cb ( ) ; if ( curlcheck_conv_cb_option ( option ) ) if ( ! curlcheck_conv_cb ( value ) ) Wcurl_easy_setopt_err_conv_cb ( ) ; if ( ( option ) == CURLOPT_SEEKFUNCTION ) if ( ! curlcheck_seek_cb ( value ) ) Wcurl_easy_setopt_err_seek_cb ( ) ; if ( ( option ) == CURLOPT_CHUNK_BGN_FUNCTION ) if ( ! curlcheck_chunk_bgn_cb ( value ) ) Wcurl_easy_setopt_err_chunk_bgn_cb ( ) ; if ( ( option ) == CURLOPT_CHUNK_END_FUNCTION ) if ( ! curlcheck_chunk_end_cb ( value ) ) Wcurl_easy_setopt_err_chunk_end_cb ( ) ; if ( ( option ) == CURLOPT_CLOSESOCKETFUNCTION ) if ( ! curlcheck_close_socket_cb ( value ) ) Wcurl_easy_setopt_err_close_socket_cb ( ) ; if ( ( option ) == CURLOPT_FNMATCH_FUNCTION ) if ( ! curlcheck_fnmatch_cb ( value ) ) Wcurl_easy_setopt_err_fnmatch_cb ( ) ; if ( ( option ) == CURLOPT_HSTSREADFUNCTION ) if ( ! curlcheck_hstsread_cb ( value ) ) Wcurl_easy_setopt_err_hstsread_cb ( ) ; if ( ( option ) == CURLOPT_HSTSWRITEFUNCTION ) if ( ! curlcheck_hstswrite_cb ( value ) ) Wcurl_easy_setopt_err_hstswrite_cb ( ) ; if ( ( option ) == CURLOPT_SSH_HOSTKEYFUNCTION ) if ( ! curlcheck_ssh_hostkey_cb ( value ) ) Wcurl_easy_setopt_err_ssh_hostkey_cb ( ) ; if ( ( option ) == CURLOPT_SSH_KEYFUNCTION ) if ( ! curlcheck_ssh_key_cb ( value ) ) Wcurl_easy_setopt_err_ssh_key_cb ( ) ; if ( ( option ) == CURLOPT_INTERLEAVEFUNCTION ) if ( ! curlcheck_interleave_cb ( value ) ) Wcurl_easy_setopt_err_interleave_cb ( ) ; if ( ( option ) == CURLOPT_PREREQFUNCTION ) if ( ! curlcheck_prereq_cb ( value ) ) Wcurl_easy_setopt_err_prereq_cb ( ) ; if ( ( option ) == CURLOPT_TRAILERFUNCTION ) if ( ! curlcheck_trailer_cb ( value ) ) Wcurl_easy_setopt_err_trailer_cb ( ) ; if ( curlcheck_cb_data_option ( option ) ) if ( ! curlcheck_cb_data ( value ) ) Wcurl_easy_setopt_err_cb_data ( ) ; if ( ( option ) == CURLOPT_ERRORBUFFER ) if ( ! curlcheck_error_buffer ( value ) ) Wcurl_easy_setopt_err_error_buffer ( ) ; if ( ( option ) == CURLOPT_CURLU ) if ( ! curlcheck_ptr ( ( value ) , CURLU ) ) Wcurl_easy_setopt_err_curlu ( ) ; if ( ( option ) == CURLOPT_STDERR ) if ( ! curlcheck_FILE ( value ) ) Wcurl_easy_setopt_err_FILE ( ) ; if ( curlcheck_postfields_option ( option ) ) if ( ! curlcheck_postfields ( value ) ) Wcurl_easy_setopt_err_postfields ( ) ; if ( ( option ) == CURLOPT_HTTPPOST ) if ( ! curlcheck_arr ( ( value ) , struct curl_httppost ) ) Wcurl_easy_setopt_err_curl_httpost ( ) ; if ( ( option ) == CURLOPT_MIMEPOST ) if ( ! curlcheck_ptr ( ( value ) , curl_mime ) ) Wcurl_easy_setopt_err_curl_mimepost ( ) ; if ( curlcheck_slist_option ( option ) ) if ( ! curlcheck_arr ( ( value ) , struct curl_slist ) ) Wcurl_easy_setopt_err_curl_slist ( ) ; if ( ( option ) == CURLOPT_SHARE ) if ( ! curlcheck_ptr ( ( value ) , CURLSH ) ) Wcurl_easy_setopt_err_CURLSH ( ) ; ) } ( curl_easy_setopt ) ( handle , option , value ) ; } ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curl_easy_getinfo ( handle , info , arg ) __extension__ ( { if ( __builtin_constant_p ( info ) ) { CURL_IGNORE_DEPRECATION ( if ( curlcheck_string_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , char * ) ) Wcurl_easy_getinfo_err_string ( ) ; if ( curlcheck_long_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , long ) ) Wcurl_easy_getinfo_err_long ( ) ; if ( curlcheck_double_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , double ) ) Wcurl_easy_getinfo_err_double ( ) ; if ( curlcheck_slist_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , struct curl_slist * ) ) Wcurl_easy_getinfo_err_curl_slist ( ) ; if ( curlcheck_tlssessioninfo_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , struct curl_tlssessioninfo * ) ) Wcurl_easy_getinfo_err_curl_tlssessioninfo ( ) ; if ( curlcheck_certinfo_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , struct curl_certinfo * ) ) Wcurl_easy_getinfo_err_curl_certinfo ( ) ; if ( curlcheck_socket_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , curl_socket_t ) ) Wcurl_easy_getinfo_err_curl_socket ( ) ; if ( curlcheck_off_t_info ( info ) ) if ( ! curlcheck_arr ( ( arg ) , curl_off_t ) ) Wcurl_easy_getinfo_err_curl_off_t ( ) ; ) } ( curl_easy_getinfo ) ( handle , info , arg ) ; } ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curl_multi_setopt ( handle , option , value ) __extension__ ( { if ( __builtin_constant_p ( option ) ) { if ( curlcheck_long_option ( option ) ) if ( ! curlcheck_long ( value ) ) Wcurl_multi_setopt_err_long ( ) ; if ( curlcheck_off_t_option ( option ) ) if ( ! curlcheck_off_t ( value ) ) Wcurl_multi_setopt_err_curl_off_t ( ) ; if ( curlcheck_multicb_data_option ( option ) ) if ( ! curlcheck_cb_data ( value ) ) Wcurl_multi_setopt_err_cb_data ( ) ; if ( curlcheck_charpp_option ( option ) ) if ( ! curlcheck_ptrptr ( value , char ) ) Wcurl_multi_setopt_err_charpp ( ) ; if ( ( option ) == CURLMOPT_NOTIFYFUNCTION ) if ( ! curlcheck_multinotify_cb ( value ) ) Wcurl_multi_setopt_err_notifycb ( ) ; if ( ( option ) == CURLMOPT_PUSHFUNCTION ) if ( ! curlcheck_multipush_cb ( value ) ) Wcurl_multi_setopt_err_pushcb ( ) ; if ( ( option ) == CURLMOPT_SOCKETFUNCTION ) if ( ! curlcheck_multisocket_cb ( value ) ) Wcurl_multi_setopt_err_socketcb ( ) ; if ( ( option ) == CURLMOPT_TIMERFUNCTION ) if ( ! curlcheck_multitimer_cb ( value ) ) Wcurl_multi_setopt_err_timercb ( ) ; } ( curl_multi_setopt ) ( handle , option , value ) ; } ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_multicb_data_option ( option ) ( ( option ) == CURLMOPT_NOTIFYDATA || ( option ) == CURLMOPT_PUSHDATA || ( option ) == CURLMOPT_SOCKETDATA || ( option ) == CURLMOPT_TIMERDATA || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_charpp_option ( option ) ( ( option ) == CURLMOPT_PIPELINING_SERVER_BL || ( option ) == CURLMOPT_PIPELINING_SITE_BL || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_multitimer_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_multi_timer_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_multisocket_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_socket_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_multipush_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_push_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_multinotify_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_notify_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curl_share_setopt ( share , opt , param ) ( curl_share_setopt ) ( share , opt , param ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* CURLWARNING ( id , message ) static void __attribute__ ( ( __warning__ ( message ) ) ) __attribute__ ( ( __unused__ ) ) __attribute__ ( ( __noinline__ ) ) id ( void ) { __asm__ ( "" ) ; } *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_long_option ( option ) ( 0 < ( option ) && ( option ) < CURLOPTTYPE_OBJECTPOINT ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_off_t_option ( option ) ( ( ( option ) > CURLOPTTYPE_OFF_T ) && ( ( option ) < CURLOPTTYPE_BLOB ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_curl_option ( option ) ( ( option ) == CURLOPT_STREAM_DEPENDS || ( option ) == CURLOPT_STREAM_DEPENDS_E || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_string_option ( option ) ( ( option ) == CURLOPT_ABSTRACT_UNIX_SOCKET || ( option ) == CURLOPT_ACCEPT_ENCODING || ( option ) == CURLOPT_ALTSVC || ( option ) == CURLOPT_CAINFO || ( option ) == CURLOPT_CAPATH || ( option ) == CURLOPT_COOKIE || ( option ) == CURLOPT_COOKIEFILE || ( option ) == CURLOPT_COOKIEJAR || ( option ) == CURLOPT_COOKIELIST || ( option ) == CURLOPT_CRLFILE || ( option ) == CURLOPT_CUSTOMREQUEST || ( option ) == CURLOPT_DEFAULT_PROTOCOL || ( option ) == CURLOPT_DNS_INTERFACE || ( option ) == CURLOPT_DNS_LOCAL_IP4 || ( option ) == CURLOPT_DNS_LOCAL_IP6 || ( option ) == CURLOPT_DNS_SERVERS || ( option ) == CURLOPT_DOH_URL || ( option ) == CURLOPT_ECH || ( option ) == CURLOPT_EGDSOCKET || ( option ) == CURLOPT_FTP_ACCOUNT || ( option ) == CURLOPT_FTP_ALTERNATIVE_TO_USER || ( option ) == CURLOPT_FTPPORT || ( option ) == CURLOPT_HAPROXY_CLIENT_IP || ( option ) == CURLOPT_HSTS || ( option ) == CURLOPT_INTERFACE || ( option ) == CURLOPT_ISSUERCERT || ( option ) == CURLOPT_KEYPASSWD || ( option ) == CURLOPT_KRBLEVEL || ( option ) == CURLOPT_LOGIN_OPTIONS || ( option ) == CURLOPT_MAIL_AUTH || ( option ) == CURLOPT_MAIL_FROM || ( option ) == CURLOPT_NETRC_FILE || ( option ) == CURLOPT_NOPROXY || ( option ) == CURLOPT_PASSWORD || ( option ) == CURLOPT_PINNEDPUBLICKEY || ( option ) == CURLOPT_PRE_PROXY || ( option ) == CURLOPT_PROTOCOLS_STR || ( option ) == CURLOPT_PROXY || ( option ) == CURLOPT_PROXY_CAINFO || ( option ) == CURLOPT_PROXY_CAPATH || ( option ) == CURLOPT_PROXY_CRLFILE || ( option ) == CURLOPT_PROXY_ISSUERCERT || ( option ) == CURLOPT_PROXY_KEYPASSWD || ( option ) == CURLOPT_PROXY_PINNEDPUBLICKEY || ( option ) == CURLOPT_PROXY_SERVICE_NAME || ( option ) == CURLOPT_PROXY_SSL_CIPHER_LIST || ( option ) == CURLOPT_PROXY_SSLCERT || ( option ) == CURLOPT_PROXY_SSLCERTTYPE || ( option ) == CURLOPT_PROXY_SSLKEY || ( option ) == CURLOPT_PROXY_SSLKEYTYPE || ( option ) == CURLOPT_PROXY_TLS13_CIPHERS || ( option ) == CURLOPT_PROXY_TLSAUTH_PASSWORD || ( option ) == CURLOPT_PROXY_TLSAUTH_TYPE || ( option ) == CURLOPT_PROXY_TLSAUTH_USERNAME || ( option ) == CURLOPT_PROXYPASSWORD || ( option ) == CURLOPT_PROXYUSERNAME || ( option ) == CURLOPT_PROXYUSERPWD || ( option ) == CURLOPT_RANDOM_FILE || ( option ) == CURLOPT_RANGE || ( option ) == CURLOPT_REDIR_PROTOCOLS_STR || ( option ) == CURLOPT_REFERER || ( option ) == CURLOPT_REQUEST_TARGET || ( option ) == CURLOPT_RTSP_SESSION_ID || ( option ) == CURLOPT_RTSP_STREAM_URI || ( option ) == CURLOPT_RTSP_TRANSPORT || ( option ) == CURLOPT_SASL_AUTHZID || ( option ) == CURLOPT_SERVICE_NAME || ( option ) == CURLOPT_SOCKS5_GSSAPI_SERVICE || ( option ) == CURLOPT_SSH_HOST_PUBLIC_KEY_MD5 || ( option ) == CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 || ( option ) == CURLOPT_SSH_KNOWNHOSTS || ( option ) == CURLOPT_SSH_PRIVATE_KEYFILE || ( option ) == CURLOPT_SSH_PUBLIC_KEYFILE || ( option ) == CURLOPT_SSLCERT || ( option ) == CURLOPT_SSLCERTTYPE || ( option ) == CURLOPT_SSLENGINE || ( option ) == CURLOPT_SSLKEY || ( option ) == CURLOPT_SSLKEYTYPE || ( option ) == CURLOPT_SSL_CIPHER_LIST || ( option ) == CURLOPT_SSL_EC_CURVES || ( option ) == CURLOPT_SSL_SIGNATURE_ALGORITHMS || ( option ) == CURLOPT_TLS13_CIPHERS || ( option ) == CURLOPT_TLSAUTH_PASSWORD || ( option ) == CURLOPT_TLSAUTH_TYPE || ( option ) == CURLOPT_TLSAUTH_USERNAME || ( option ) == CURLOPT_UNIX_SOCKET_PATH || ( option ) == CURLOPT_URL || ( option ) == CURLOPT_USERAGENT || ( option ) == CURLOPT_USERNAME || ( option ) == CURLOPT_AWS_SIGV4 || ( option ) == CURLOPT_HTTPSIG_HEADERS || ( option ) == CURLOPT_HTTPSIG_KEY || ( option ) == CURLOPT_HTTPSIG_KEYID || ( option ) == CURLOPT_USERPWD || ( option ) == CURLOPT_XOAUTH2_BEARER || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_write_cb_option ( option ) ( ( option ) == CURLOPT_HEADERFUNCTION || ( option ) == CURLOPT_WRITEFUNCTION ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_conv_cb_option ( option ) ( ( option ) == CURLOPT_CONV_TO_NETWORK_FUNCTION || ( option ) == CURLOPT_CONV_FROM_NETWORK_FUNCTION || ( option ) == CURLOPT_CONV_FROM_UTF8_FUNCTION ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_cb_data_option ( option ) ( ( option ) == CURLOPT_CHUNK_DATA || ( option ) == CURLOPT_CLOSESOCKETDATA || ( option ) == CURLOPT_DEBUGDATA || ( option ) == CURLOPT_FNMATCH_DATA || ( option ) == CURLOPT_HEADERDATA || ( option ) == CURLOPT_HSTSREADDATA || ( option ) == CURLOPT_HSTSWRITEDATA || ( option ) == CURLOPT_INTERLEAVEDATA || ( option ) == CURLOPT_IOCTLDATA || ( option ) == CURLOPT_OPENSOCKETDATA || ( option ) == CURLOPT_PREREQDATA || ( option ) == CURLOPT_XFERINFODATA || ( option ) == CURLOPT_READDATA || ( option ) == CURLOPT_SEEKDATA || ( option ) == CURLOPT_SOCKOPTDATA || ( option ) == CURLOPT_SSH_KEYDATA || ( option ) == CURLOPT_SSL_CTX_DATA || ( option ) == CURLOPT_WRITEDATA || ( option ) == CURLOPT_RESOLVER_START_DATA || ( option ) == CURLOPT_TRAILERDATA || ( option ) == CURLOPT_SSH_HOSTKEYDATA || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_postfields_option ( option ) ( ( option ) == CURLOPT_POSTFIELDS || ( option ) == CURLOPT_COPYPOSTFIELDS || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_slist_option ( option ) ( ( option ) == CURLOPT_HTTP200ALIASES || ( option ) == CURLOPT_HTTPHEADER || ( option ) == CURLOPT_MAIL_RCPT || ( option ) == CURLOPT_POSTQUOTE || ( option ) == CURLOPT_PREQUOTE || ( option ) == CURLOPT_PROXYHEADER || ( option ) == CURLOPT_QUOTE || ( option ) == CURLOPT_RESOLVE || ( option ) == CURLOPT_TELNETOPTIONS || ( option ) == CURLOPT_CONNECT_TO || 0 ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_string_info ( info ) ( CURLINFO_STRING < ( info ) && ( info ) < CURLINFO_LONG && ( info ) != CURLINFO_PRIVATE ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_long_info ( info ) ( CURLINFO_LONG < ( info ) && ( info ) < CURLINFO_DOUBLE ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_double_info ( info ) ( CURLINFO_DOUBLE < ( info ) && ( info ) < CURLINFO_SLIST ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_slist_info ( info ) ( ( ( info ) == CURLINFO_SSL_ENGINES ) || ( ( info ) == CURLINFO_COOKIELIST ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_tlssessioninfo_info ( info ) ( ( ( info ) == CURLINFO_TLS_SSL_PTR ) || ( ( info ) == CURLINFO_TLS_SESSION ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_certinfo_info ( info ) ( ( info ) == CURLINFO_CERTINFO ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_socket_info ( info ) ( CURLINFO_SOCKET < ( info ) && ( info ) < CURLINFO_OFF_T ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_off_t_info ( info ) ( CURLINFO_OFF_T < ( info ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_any_ptr ( expr ) ( sizeof ( expr ) == sizeof ( void * ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , char [ ] ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_NULL ( expr ) ( __builtin_types_compatible_p ( __typeof__ ( expr ) , __typeof__ ( NULL ) ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_ptr ( expr , type ) ( curlcheck_NULL ( expr ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , type * ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , const type * ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_ptrptr ( expr , type ) ( curlcheck_NULL ( expr ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , type * * ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , type * [ ] ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , const type * [ ] ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , const type * * ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_arr ( expr , type ) ( curlcheck_ptr ( ( expr ) , type ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , type [ ] ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_string ( expr ) ( curlcheck_arr ( ( expr ) , char ) || curlcheck_arr ( ( expr ) , signed char ) || curlcheck_arr ( ( expr ) , unsigned char ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_curl ( expr ) ( curlcheck_NULL ( expr ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , CURL * ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_long ( expr ) ( ( ( sizeof ( long ) != sizeof ( int ) ) && ( __builtin_types_compatible_p ( __typeof__ ( expr ) , long ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , signed long ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , unsigned long ) ) ) || ( ( sizeof ( long ) == sizeof ( int ) ) && ( __builtin_types_compatible_p ( __typeof__ ( expr ) , long ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , signed long ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , unsigned long ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , int ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , signed int ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , unsigned int ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , short ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , signed short ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , unsigned short ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , char ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , signed char ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , unsigned char ) ) ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_off_t ( expr ) ( __builtin_types_compatible_p ( __typeof__ ( expr ) , curl_off_t ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_error_buffer ( expr ) ( curlcheck_NULL ( expr ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , char * ) || __builtin_types_compatible_p ( __typeof__ ( expr ) , char [ ] ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_cb_data ( expr ) curlcheck_any_ptr ( expr ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_FILE ( expr ) ( curlcheck_NULL ( expr ) || ( __builtin_types_compatible_p ( __typeof__ ( expr ) , FILE * ) ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_postfields ( expr ) ( curlcheck_ptr ( ( expr ) , void ) || curlcheck_arr ( ( expr ) , char ) || curlcheck_arr ( ( expr ) , unsigned char ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_cb_compatible ( func , type ) ( __builtin_types_compatible_p ( __typeof__ ( func ) , type ) || __builtin_types_compatible_p ( __typeof__ ( func ) * , type ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_resolver_start_callback ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_resolver_start_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_read_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , __typeof__ ( fread ) * ) || curlcheck_cb_compatible ( ( expr ) , curl_read_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_read_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_read_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_read_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_read_callback4 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_read_callback5 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_read_callback6 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_write_cb ( expr ) ( curlcheck_read_cb ( expr ) || curlcheck_cb_compatible ( ( expr ) , __typeof__ ( fwrite ) * ) || curlcheck_cb_compatible ( ( expr ) , curl_write_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_write_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_write_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_write_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_write_callback4 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_write_callback5 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_write_callback6 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_ioctl_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_ioctl_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ioctl_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ioctl_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ioctl_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ioctl_callback4 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_sockopt_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_sockopt_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_sockopt_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_sockopt_callback2 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_opensocket_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_opensocket_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_opensocket_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_opensocket_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_opensocket_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_opensocket_callback4 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_progress_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_progress_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_progress_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_progress_callback2 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_xferinfo_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_xferinfo_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_debug_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_debug_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback4 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback5 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback6 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback7 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_debug_callback8 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_ssl_ctx_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_ssl_ctx_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback4 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback5 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback6 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback7 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_ssl_ctx_callback8 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_conv_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_conv_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_conv_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_conv_callback2 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_conv_callback3 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_conv_callback4 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_seek_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_seek_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_seek_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_seek_callback2 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_chunk_bgn_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_chunk_bgn_callback ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_chunk_bgn_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_chunk_bgn_callback2 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_chunk_end_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_chunk_end_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_close_socket_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_closesocket_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_fnmatch_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_fnmatch_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_hstsread_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_hstsread_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_hstswrite_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_hstswrite_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_ssh_hostkey_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_sshhostkeycallback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_ssh_key_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_sshkeycallback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_interleave_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_interleave_callback1 ) || curlcheck_cb_compatible ( ( expr ) , Wcurl_interleave_callback2 ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_prereq_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_prereq_callback ) ) *)
-  { TODO : Unable to convert function-like macro: }
-  (* curlcheck_trailer_cb ( expr ) ( curlcheck_NULL ( expr ) || curlcheck_cb_compatible ( ( expr ) , curl_trailer_callback ) ) *)
 
 type
   // Forward declarations
@@ -787,14 +655,14 @@ type
 
   curl_sockopt_callback = function(clientp: Pointer; curlfd: curl_socket_t; purpose: curlsocktype): Integer; cdecl;
 
-  {$IFDEF FPC}{$IFDEF WINDOWS}
+  //{$IFDEF FPC}{$IFDEF WINDOWS}
   { FPC's WinSock unit does not export "sockaddr": declare the 16 byte layout
     here (patched by HttpFileParser; on other systems the Sockets unit has it) }
   sockaddr = record
     sa_family : Word;
     sa_data : array[0..13] of AnsiChar;
   end;
-  {$ENDIF}{$ENDIF}
+  //{$ENDIF}{$ENDIF}
 
   curl_sockaddr = record
     family: Integer;
